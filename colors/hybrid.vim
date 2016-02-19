@@ -91,13 +91,13 @@ if exists("g:hybrid_reduced_contrast") && g:hybrid_reduced_contrast == 1
   let s:gui_comment    = "#6c7a80"
 else
   let s:gui_background = "#252c31"
-  let s:gui_selection  = "#373b41"
-  let s:gui_line       = "#282a2e"
-  let s:gui_comment    = "#707880"
+  let s:gui_selection  = "#3b3f45"
+  let s:gui_line       = "#2e373b"
+  let s:gui_comment    = "#9a9a9a"
 endif
 
 let s:palette.gui.background = { 'dark' : s:gui_background , 'light' : "#e4e4e4" }
-let s:palette.gui.foreground = { 'dark' : "#c5c8c6"        , 'light' : "#000000" }
+let s:palette.gui.foreground = { 'dark' : "#ddddd5"        , 'light' : "#000000" }
 let s:palette.gui.selection  = { 'dark' : s:gui_selection  , 'light' : "#bcbcbc" }
 let s:palette.gui.line       = { 'dark' : s:gui_line       , 'light' : "#d0d0d0" }
 let s:palette.gui.comment    = { 'dark' : s:gui_comment    , 'light' : "#5f5f5f" }
@@ -315,7 +315,7 @@ exe "hi! Search"        .s:fg_background  .s:bg_yellow      .s:fmt_none
 exe "hi! SpecialKey"    .s:fg_selection   .s:bg_none        .s:fmt_none
 exe "hi! SpellCap"      .s:fg_blue        .s:bg_darkblue    .s:fmt_undr
 exe "hi! SpellLocal"    .s:fg_aqua        .s:bg_darkcyan    .s:fmt_undr
-exe "hi! SpellBad"      .s:fg_red         .s:bg_darkred     .s:fmt_undr
+exe "hi! SpellBad"      .s:fg_none        .s:bg_none        .s:fmt_curl
 exe "hi! SpellRare"     .s:fg_purple      .s:bg_darkpurple  .s:fmt_undr
 exe "hi! StatusLine"    .s:fg_comment     .s:bg_background  .s:fmt_revr
 exe "hi! StatusLineNC"  .s:fg_window      .s:bg_comment     .s:fmt_revr
